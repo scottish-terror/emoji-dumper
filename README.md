@@ -14,5 +14,5 @@ emoji-convert format:
 This creates a json file called `output.json` with all the pathing in it
 
 emojme format:
-`node emojeme.js upload --subdomain &lt;your slack domain name&gt; --token &lt;your slack token xoxs-xxx&gt; --src output.json`
+`node emojeme.js upload --subdomain <your slack domain name> --token <your slack token xoxs-xxx> --src output.json`
 
