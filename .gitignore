@@ -12,3 +12,5 @@
 *.out
 
 output.json
+dump
+dump.exe
