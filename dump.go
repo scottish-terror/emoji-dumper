@@ -7,6 +7,7 @@ import (
 	"io/ioutil"
 	"os"
 	"path/filepath"
+	"runtime"
 )
 
 type emoji struct {
@@ -20,9 +21,15 @@ func main() {
 	var masterEmoji []emoji
 	var files []string
 
+	version := "1.0"
+
 	path := flag.String("p", "", "Path to read")
+	ver := flag.Bool("v", false, "Display version #")
 	flag.Parse()
 
+	if *ver {
+		fmt.Println("dump v" + version)
+	}
 	if *path == "" {
 		fmt.Println("-p required!")
 	}
@@ -43,7 +50,11 @@ func main() {
 	}
 
 	for _, file := range files {
-		tmpEmoji.URL = myPath + "\\" + file
+		if runtime.GOOS == "windows" {
+			tmpEmoji.URL = myPath + "\\" + file
+		} else {
+			tmpEmoji.URL = myPath + "/" + file
+		}
 		tmpEmoji.Name = file[0 : len(file)-4]
 		masterEmoji = append(masterEmoji, tmpEmoji)
 	}
