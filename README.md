@@ -11,6 +11,8 @@ The output from emoji-convert is a .JSON file formatted correctly for https://gi
 
 **Check releases for latest binaries** https://github.com/srv1054/emoji-dumper/releases
 
+This works great with this emoji stash: https://github.com/srv1054/slack-emoji
+
 emoji-convert format:
 `dump -p /my/path/to/all/emojis`
 
