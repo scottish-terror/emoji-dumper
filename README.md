@@ -8,6 +8,8 @@ The assumption is made that:
 
 The output from emoji-convert is a .JSON file formatted correctly for https://github.com/jackellenberger/emojme to slurp it in and upload it with your personal Slack Token.
 
+**Check releases for latest binaries** https://github.com/srv1054/emoji-dumper/releases
+
 emoji-convert format:
 `dump -p /my/path/to/all/emojis`
 
