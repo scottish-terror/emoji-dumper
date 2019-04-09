@@ -9,9 +9,9 @@ The assumption is made that:
 
 The output from emoji-convert is a .JSON file formatted correctly for https://github.com/jackellenberger/emojme to slurp it in and upload it with your personal Slack Token.
 
-**Check releases for latest binaries** https://github.com/srv1054/emoji-dumper/releases
+**Check releases for latest binaries** https://github.com/scottish-terror/emoji-dumper/releases
 
-This works great with this emoji stash: https://github.com/srv1054/slack-emoji
+This works great with this emoji stash: https://github.com/scottish-terror/slack-emoji
 
 emoji-convert format:
 `dump -p /my/path/to/all/emojis`
